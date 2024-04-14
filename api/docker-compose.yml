@@ -1,0 +1,15 @@
+version: "2.26.1"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "fastapi_app"
+    command: ["/fastapi_app/docker/app.sh"]
+    ports:
+      - "8000:8000"
+    networks:
+      - custom
+networks:
+  custom:
+    driver: bridge
