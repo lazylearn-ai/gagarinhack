@@ -3,7 +3,7 @@ import requests
 from PIL import Image
 import io
 
-url = "http://95.163.228.196:8000/ai/detect"
+url = "http://79.174.80.90:8000/ai/detect"
 
 st.title("LazyLearn. Распознавание документов")
 
